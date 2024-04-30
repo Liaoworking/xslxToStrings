@@ -11,6 +11,8 @@ class XSLXManager {
     
     static var pannel: NSSavePanel?
     
+    static var showWindow: NSWindow?
+    
     static func analysisXSLXFile(at urlString: String) -> Void {
                 
         debugPrint("获取到的文件地址",urlString)
@@ -87,7 +89,7 @@ class XSLXManager {
     
     /// 导出要错词或者已收藏的单词
     static func exprotFile() {
-        guard let keywindow = NSApplication.shared.keyWindow else { return }
+        guard let keywindow = showWindow else { return }
         let pannel = NSSavePanel()
         XSLXManager.pannel = pannel
         pannel.nameFieldLabel = "🍃"
@@ -98,7 +100,6 @@ class XSLXManager {
         pannel.nameFieldStringValue = "output_\(formatter.string(from: Date()))"
         pannel.message = "choose your save path"
         pannel.allowsOtherFileTypes = true
-//        pannel.allowedFileTypes = ["xlsx"]
         pannel.isExtensionHidden = false
         pannel.canCreateDirectories = true
         pannel.beginSheetModal(for: keywindow) { (response) in
