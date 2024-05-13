@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0D4AFE282BF2022F003BA436 /* XMLManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D4AFE272BF2022F003BA436 /* XMLManager.swift */; };
 		0DDB38F12BE0766B008787EC /* StringsConverterApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DDB38F02BE0766B008787EC /* StringsConverterApp.swift */; };
 		0DDB38F32BE0766B008787EC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DDB38F22BE0766B008787EC /* ContentView.swift */; };
 		0DDB38F52BE0766C008787EC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0DDB38F42BE0766C008787EC /* Assets.xcassets */; };
@@ -76,6 +77,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0D4AFE272BF2022F003BA436 /* XMLManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XMLManager.swift; sourceTree = "<group>"; };
 		0DDB38ED2BE0766B008787EC /* StringsConverter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StringsConverter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0DDB38F02BE0766B008787EC /* StringsConverterApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringsConverterApp.swift; sourceTree = "<group>"; };
 		0DDB38F22BE0766B008787EC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -243,6 +245,7 @@
 				0DDB38F02BE0766B008787EC /* StringsConverterApp.swift */,
 				0DDB38F22BE0766B008787EC /* ContentView.swift */,
 				0DDB38FF2BE07BC3008787EC /* XSLXManager.swift */,
+				0D4AFE272BF2022F003BA436 /* XMLManager.swift */,
 				0DDB399C2BE07CBA008787EC /* SSZipArchive */,
 				0DDB39012BE07C54008787EC /* XlsxReaderWriter */,
 				0DDB38F42BE0766C008787EC /* Assets.xcassets */,
@@ -791,6 +794,7 @@
 				0DDB398C2BE07C55008787EC /* BRANumberFormat.m in Sources */,
 				0DDB39852BE07C55008787EC /* BRAColumn.m in Sources */,
 				0DDB39CC2BE07CBA008787EC /* mz_crypt.c in Sources */,
+				0D4AFE282BF2022F003BA436 /* XMLManager.swift in Sources */,
 				0DDB398B2BE07C55008787EC /* BRAImage.m in Sources */,
 				0DDB39752BE07C55008787EC /* NSDictionary+DeepCopy.m in Sources */,
 				0DDB39CB2BE07CBA008787EC /* mz_strm_mem.c in Sources */,

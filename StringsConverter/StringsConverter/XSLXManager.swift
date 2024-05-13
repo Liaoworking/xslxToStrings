@@ -163,7 +163,9 @@ extension String {
         static var resultAndroidDoc: String {
             return resultDoc.appending("/Android")
         }
-        
+        static var xmlDoc: String {
+            return resultDoc.appending("/XML")
+        }
     }
 }
 

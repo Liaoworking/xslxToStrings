@@ -16,9 +16,9 @@ struct ContentView: View {
             RoundedRectangle(cornerRadius: 20)
                 .fill(isTarget ? Color.green : Color.gray)
                 .frame(width: 150,height: 150)
-            Text("Drop the XSLX file here")
+            Text("Drop the xslx or xml file here")
         }
-        .padding().onDrop(of: [.spreadsheet], isTargeted: $isTarget, perform: { providers in
+        .padding().onDrop(of: [.spreadsheet,.xml], isTargeted: $isTarget, perform: { providers in
             
             guard let provider = providers.first else { return false }
                         
@@ -28,6 +28,14 @@ struct ContentView: View {
                     XSLXManager.analysisXSLXFile(at: url.path)
                 }
             }
+            
+            let _ = provider.loadFileRepresentation(for: .xml) { url, isOk, error in
+                if let url = url {
+                    debugPrint(url)
+                    XMLManager.analysisXMLFile(at: url.path)
+                }
+            }
+            
             return true
         })
     }
