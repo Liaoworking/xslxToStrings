@@ -8,11 +8,11 @@
 import Foundation
 class CountryInfoModel {
     var countryCode: String = ""
-    var content: String = ""
+    var iOSContent: String = ""
+    var androidContent: String = ""
     
-    init(countryCode: String, content: String) {
+    init(countryCode: String) {
         self.countryCode = countryCode
-        self.content = content
     }
     
 }

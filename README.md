@@ -1,7 +1,7 @@
 # xslxToStrings
-A tool to convert xslx file to iOS strings file
+A tool to convert xslx file to iOS/Android strings file
 
-you can drop your xslx file to this application to generate iOS/MacOS strings file
+you can drop your xslx file to this application to generate iOS/MacOS/Android strings file
 
 
 ![image.png](./img/20240430112939.jpg)
